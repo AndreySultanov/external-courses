@@ -1,4 +1,4 @@
-function printArray (arr) {
+function printArray(arr) {
     arr.forEach(function (item) {
         console.log(item);
     });

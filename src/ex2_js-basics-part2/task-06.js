@@ -1,15 +1,19 @@
 function acceptNumber(number) {
+    if (number === 1 || number === 0) {        
+        return `Число ${number} - не простое и не составное`;
+    }
+
     if (number > 1000) {
-        return "Данные неверны";
+        return 'Данные неверны';
     }
     
     for (let i = 2; i < number; i++) {
         if (number % i === 0) {
-            return "Число " + number + " - составное число";   
+            return `Число ${number} - составное число`;   
         }
     }
 
-    return "Число " + number + " - простое число";
+    return `Число ${number} - простое число`;
 }
 
 module.exports = acceptNumber;
