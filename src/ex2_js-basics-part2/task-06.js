@@ -1,6 +1,6 @@
 function acceptNumber(number) {
     if (number === 1 || number === 0) {        
-        return `Число ${number} - не простое и не составное`;
+        return `Это число - ${number}`;
     }
 
     if (number > 1000) {
